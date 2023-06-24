@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noah COOP | @yield('page_title')</title>
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <div class="w-full flex min-h-screen overflow-hidden">
         <div
-            class="w-[4rem] md:w-[15rem] h-screen bg-gray-800 overflow-hidden hover:overflow-y-scroll fixed z-20 scrollbar-styled">
+            class="w-[4rem] md:w-[15rem] h-screen bg-green-900 overflow-hidden hover:overflow-y-auto fixed z-20 scrollbar-styled">
             @include('admin/layout/partials/sidebar')
         </div>
         <div class="ml-[4rem] md:ml-[15rem] flex-1 mr-auto bg-gray-200 overflow-y-auto">
