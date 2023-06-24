@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\AuthController;
+use App\Http\Controllers\admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,4 @@ Route::get('/admin', function () {
 });
 
 Route::post('/admin', [AuthController::class, 'login']);
+Route::get('/home', [DashboardController::class, 'index']);

@@ -5,23 +5,14 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AuthController extends Controller
+class DashboardController extends Controller
 {
-    /**
-     * Logs in a user.
-     */
-    public function login(Request $req)
-    {
-        return redirect('/home');
-    }
-
-
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('admin.dashboard.index');
     }
 
     /**
