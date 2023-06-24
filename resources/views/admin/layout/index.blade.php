@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    @include('./public/layout/partials/header')
+    @include('./partials/header.blade.php')
     @yield('content')
-    @include('./public/layout/partials/footer')
+    @include('./partials/footer.blade.php')
 </body>
 
 </html>
