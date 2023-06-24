@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Hiwua';
+  src: url('../fonts/hiwua.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sabean';
+  src: url('../fonts/sabaean.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Zelan';
+  src: url('../fonts/zelan.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Washrab';
+  src: url('../fonts/washrab.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fantuwua';
+  src: url('../fonts/fantuwua.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tint';
+  src: url('../fonts/tint.ttf') format('truetype');
+}
+
+
+:root {
+  --font-hiwua: 'Hiwua';
+  --font-sabean: 'Sabean';
+  --font-zelan: 'Zelan';
+  --font-washerab: 'Washerab';
+  --font-fantuwua: 'Fantuwua';
+  --font-tint: 'Tint';
+}
+
+.hiwua {
+    font-family: var(--font-hiwua);
+}
+.sabean {
+    font-family: var(--font-sabean);
+}
+
+.zelan {
+    font-family: var(--font-zelan);
+}
+
+.wahsrab {
+    font-family: var(--font-wahsrab);
+}
+
+.fantuwua {
+    font-family: var(--font-fantuwua);
+}
+
+.tint {
+    font-family: var(--font-tint);
+}
