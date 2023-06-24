@@ -60,3 +60,17 @@
 .tint {
     font-family: var(--font-tint);
 }
+
+
+.scrollbar-styled::-webkit-scrollbar {
+  width: 2px;
+}
+
+.scrollbar-styled::-webkit-scrollbar-track {
+  background-color: #141212;
+}
+
+.scrollbar-styled::-webkit-scrollbar-thumb {
+  background-color: #dbb509;
+  border-radius: 1rem;
+}

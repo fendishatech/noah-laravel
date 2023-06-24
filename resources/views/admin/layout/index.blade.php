@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <div class="w-full flex min-h-screen">
-        <div class="w-[4rem] md:w-[15rem] bg-gray-100">
-            <!-- Sidebar -->
-            <h1>Sidebar</h1>
+    <div class="w-full flex min-h-screen overflow-hidden">
+        <div
+            class="w-[4rem] md:w-[15rem] h-screen bg-gray-800 overflow-hidden hover:overflow-y-scroll fixed z-20 scrollbar-styled">
+            @include('admin/layout/partials/sidebar')
         </div>
-        <div class="flex-1 bg-gray-200">
+        <div class="ml-[4rem] md:ml-[15rem] flex-1 mr-auto bg-gray-200 overflow-y-auto">
             @include('admin/layout/partials/header')
             <div class="pt-[64px]">
                 @yield('content')
