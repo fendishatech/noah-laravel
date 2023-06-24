@@ -6,7 +6,8 @@
 
 @section('content')
     <div class="w-full hiwua h-screen flex items-center justify-center bg-gray-100">
-        <form class="w-full md:w-1/3 rounded-lg" action="/auth/login" method="POST">
+        <form class="w-full md:w-1/3 rounded-lg" action="{{ url('/admin') }}" method="POST">
+            @csrf
             <div class="flex font-bold justify-center mt-6">
                 <img class="h-20 w-20 mb-3" src="https://dummyimage.com/64x64" />
             </div>
@@ -19,6 +20,7 @@
                             type="phone" placeholder="ስልክ ቁጥር" required />
                     </div>
                 </div>
+
                 <div class="w-full mb-2">
                     <div class="flex items-center">
                         <input name="password"
@@ -26,6 +28,7 @@
                             type="password" placeholder="ፓስወርድ" required />
                     </div>
                 </div>
+
                 <button type="submit"
                     class="w-full py-2 mt-8 text-4xl rounded-full bg-green-700 text-gray-100 focus:outline-none hover:bg-green-600">
                     ግባ
