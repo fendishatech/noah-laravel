@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\AuthController;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +21,11 @@ Route::get('/', function () {
 });
 
 // Admin Routes
-Route::get('/admin', function () {
-    return view('admin.auth.login');
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin.auth.login');
+    });
+    Route::post('/', [UserController::class, 'login']);
+    Route::get('/home', [DashboardController::class, 'index']);
+    // Routes that require only admin middleware
 });
-
-Route::post('/admin', [AuthController::class, 'login']);
-Route::get('/home', [DashboardController::class, 'index']);

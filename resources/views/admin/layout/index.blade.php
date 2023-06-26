@@ -14,7 +14,7 @@
 <body>
     <div class="w-full flex min-h-screen overflow-hidden">
         <div
-            class="w-[4rem] md:w-[15rem] h-screen bg-green-900 overflow-hidden hover:overflow-y-auto fixed z-20 scrollbar-styled">
+            class="w-[4rem] md:w-[15rem] h-screen bg-green-950 overflow-hidden hover:overflow-y-auto fixed z-20 scrollbar-styled">
             @include('admin/layout/partials/sidebar')
         </div>
         <div class="ml-[4rem] md:ml-[15rem] flex-1 mr-auto bg-gray-200 overflow-y-auto">
