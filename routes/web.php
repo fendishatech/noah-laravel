@@ -22,9 +22,13 @@ Route::get('/', function () {
 
 // Admin Routes
 Route::prefix('admin')->group(function () {
+    // LOGIN
     Route::get('/', function () {
         return view('admin.auth.login');
-    });
+    })->name('login');
     Route::post('/', [UserController::class, 'login']);
-    Route::get('/home', [DashboardController::class, 'index']);
+    // LOGOUT
+    Route::get('/logout', [UserController::class, 'logout'])->middleware('auth');
+    // DASHBOARD
+    Route::get('/home', [DashboardController::class, 'index'])->middleware('auth');
 });

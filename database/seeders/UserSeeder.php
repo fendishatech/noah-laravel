@@ -24,5 +24,16 @@ class UserSeeder extends Seeder
             'avatar' => "/images/image.jpg",
             'user_role' => 'admin'
         ]);
+
+        User::create([
+            'first_name' => "Jean",
+            'father_name' => "doe",
+            'last_name' => "smith",
+            'email' => "jean@gmail.com",
+            'password' => Hash::make("test"),
+            'phone_no' => "0910111213",
+            'avatar' => "/images/image.jpg",
+            'user_role' => 'admin'
+        ]);
     }
 }
