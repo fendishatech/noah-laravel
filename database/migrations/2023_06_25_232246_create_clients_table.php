@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('first_name');
             $table->string('father_name');
             $table->string('phone_no')->unique('phone_no');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

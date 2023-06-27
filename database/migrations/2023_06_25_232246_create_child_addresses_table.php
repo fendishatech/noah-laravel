@@ -19,8 +19,8 @@ return new class extends Migration
             $table->integer('houseNo')->nullable();
             $table->string('placeName')->nullable();
             $table->string('phoneNo2')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('cityId')->index('cityId');
             $table->integer('subCityId')->index('subCityId');
             $table->integer('childId')->index('childId');

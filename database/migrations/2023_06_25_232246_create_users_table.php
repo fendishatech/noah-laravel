@@ -24,8 +24,8 @@ return new class extends Migration
             $table->string('avatar')->nullable();
             $table->enum('user_role', ['admin', 'user']);
             $table->text('refresh_token')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

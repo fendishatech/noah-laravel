@@ -23,8 +23,8 @@ return new class extends Migration
             $table->double('total_interest_paid')->nullable()->comment('the amount of money that is paid as interest, or accrued interest paid');
             $table->double('outstanding_balance')->nullable()->comment('total amount of money you owe, including accrued interest (remaining_amount + accrued interest)');
             $table->double('remaining_balance')->nullable()->comment('the remaining balance on the loan, difference of the principal and accrued interest (principal_amount - total_principal_paid)');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

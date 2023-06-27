@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('acc_no')->nullable()->unique('acc_no');
             $table->double('amount')->nullable();
             $table->integer('duration')->nullable()->comment('Total time that the specialSaving money should be returned in.');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

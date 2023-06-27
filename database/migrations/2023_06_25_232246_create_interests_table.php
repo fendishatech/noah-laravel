@@ -17,8 +17,8 @@ return new class extends Migration
             $table->integer('id', true);
             $table->string('name')->nullable()->unique('name');
             $table->double('percentage')->nullable()->unique('percentage');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('interestId')->index('interestId')->comment('The basic interest rate');
         });
     }

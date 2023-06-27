@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('voucher_no')->nullable()->unique('voucher_no')->comment('unique identifier for for the loan transaction');
             $table->double('amount')->nullable();
             $table->double('remaining_amount')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

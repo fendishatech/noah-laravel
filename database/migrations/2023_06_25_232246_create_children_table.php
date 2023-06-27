@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('mother_name')->nullable()->unique('mother_name');
             $table->dateTime('dob')->nullable();
             $table->double('total_saving')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

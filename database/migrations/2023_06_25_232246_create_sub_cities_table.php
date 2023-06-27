@@ -17,8 +17,8 @@ return new class extends Migration
             $table->integer('id', true);
             $table->string('name')->nullable()->unique('name');
             $table->integer('woreda')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

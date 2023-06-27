@@ -21,8 +21,8 @@ return new class extends Migration
             $table->integer('woreda')->nullable();
             $table->integer('house_no')->nullable();
             $table->string('phone_no')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('cityId')->index('cityId');
             $table->integer('subCityId')->index('subCityId');
             $table->integer('memberId')->index('memberId');

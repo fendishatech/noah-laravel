@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('cities', function (Blueprint $table) {
             $table->integer('id', true);
             $table->string('name')->nullable()->unique('name');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

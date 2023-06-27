@@ -9,21 +9,24 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    function login(Request $req)
+    function login()
     {
-        $req->validate([
-            'phone_no' => 'required',
-            'password' => 'required',
-        ]);
+        validator(request()->all(), [
+            'phone_no' => ['required'],
+            'password' => ['required'],
+        ])->validate();
 
-        $user = User::where(['phone_no' => $req->phone_no])->first();
-
-        if ($user && Hash::check($req->password, $user->password)) {
+        if (auth()->attempt(request()->only(['phone_no', 'password']))) {
             // success
-            $req->session()->put('user', $user);
-            return redirect("/home");
+            return redirect('/admin/home');
         } else {
-            return "Phone no or password is incorrect";
+            return redirect()->back()->withErrors(["email" => "Invalid credentials"]);
         }
+    }
+
+    function logout()
+    {
+        auth()->logout();
+        return redirect('/admin');
     }
 }

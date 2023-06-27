@@ -18,8 +18,8 @@ return new class extends Migration
             $table->double('amount');
             $table->integer('duration_mn')->nullable();
             $table->enum('status', ['pending', 'confirmed', 'denied']);
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

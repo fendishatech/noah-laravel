@@ -20,8 +20,8 @@ return new class extends Migration
             $table->double('amount')->nullable();
             $table->double('total_saving')->nullable()->comment('Total saving money with out interest');
             $table->double('outstanding_balance')->nullable()->comment('Current total saving amount including interest');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

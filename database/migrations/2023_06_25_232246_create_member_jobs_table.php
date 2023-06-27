@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->integer('exp_year')->nullable();
             $table->integer('exp_month')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

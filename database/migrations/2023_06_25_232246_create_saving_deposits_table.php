@@ -18,8 +18,8 @@ return new class extends Migration
             $table->double('amount')->nullable();
             $table->double('duration')->nullable()->comment('How much time in months the paid amounts accounts for');
             $table->string('voucher_no')->nullable()->unique('voucher_no')->comment('unique identifier for for the saving deposit transaction');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
             $table->integer('savingId')->index('savingId');
         });

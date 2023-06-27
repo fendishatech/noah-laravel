@@ -17,8 +17,8 @@ return new class extends Migration
             $table->integer('id', true);
             $table->double('amount')->nullable();
             $table->string('voucher_no')->nullable()->unique('voucher_no')->comment('unique identifier for for the SpecialSaving deposit transaction');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
             $table->integer('SpecialSavingId')->index('SpecialSavingId');
         });

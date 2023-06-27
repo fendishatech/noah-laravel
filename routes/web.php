@@ -27,5 +27,4 @@ Route::prefix('admin')->group(function () {
     });
     Route::post('/', [UserController::class, 'login']);
     Route::get('/home', [DashboardController::class, 'index']);
-    // Routes that require only admin middleware
 });

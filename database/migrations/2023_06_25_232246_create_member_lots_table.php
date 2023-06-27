@@ -18,8 +18,8 @@ return new class extends Migration
             $table->integer('purchased')->nullable();
             $table->integer('promised')->nullable();
             $table->double('balance')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

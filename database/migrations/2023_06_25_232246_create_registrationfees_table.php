@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('registrationfees', function (Blueprint $table) {
             $table->integer('id', true);
             $table->boolean('status')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

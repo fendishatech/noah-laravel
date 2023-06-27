@@ -18,8 +18,8 @@ return new class extends Migration
             $table->enum('id_type', ['public', 'license', 'passport']);
             $table->string('id_number');
             $table->string('id_img_path');
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberId')->index('memberId');
         });
     }

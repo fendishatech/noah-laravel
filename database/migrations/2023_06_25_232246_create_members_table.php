@@ -30,8 +30,8 @@ return new class extends Migration
             $table->string('will_list');
             $table->string('password');
             $table->string('refreshToken')->nullable();
-            $table->dateTime('createdAt');
-            $table->dateTime('updatedAt');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
             $table->integer('memberTypeId')->index('memberTypeId');
             $table->integer('memberEduId')->nullable()->index('memberEduId');
         });
