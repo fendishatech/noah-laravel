@@ -19,24 +19,36 @@
                 <div class="w-full mb-2">
                     <div class="flex items-center">
                         <input type="text" name="first_name" placeholder="First Name"
-                            class="w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-yellow-700" />
+                            class="w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-yellow-700"
+                            value="{{ old('first_name') }}" />
                     </div>
+                    @if ($errors->has('first_name'))
+                        <span class="text-sm text-red-400">{{ $errors->first('first_name') }}</span>
+                    @endif
                 </div>
 
                 {{-- Father Name --}}
                 <div class="w-full mb-2">
                     <div class="flex items-center">
                         <input type="text" name="father_name" placeholder="Father's Name"
-                            class="w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-yellow-700" />
+                            class="w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-yellow-700"
+                            value="{{ old('father_name') }}" />
                     </div>
+                    @if ($errors->has('father_name'))
+                        <span class="text-sm text-red-400">{{ $errors->first('father_name') }}</span>
+                    @endif
                 </div>
 
                 {{-- Phone No --}}
                 <div class="w-full mb-2">
                     <div class="flex items-center">
                         <input type="tel" name="phone_no" placeholder="Phone No"
-                            class="w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-yellow-700" />
+                            class="w-full border rounded-md px-3 py-2 text-gray-700 focus:outline-yellow-700"
+                            value="{{ old('phone_no') }}" />
                     </div>
+                    @if ($errors->has('phone_no'))
+                        <span class="text-sm text-red-400">{{ $errors->first('phone_no') }}</span>
+                    @endif
                 </div>
 
                 {{-- Password --}}
