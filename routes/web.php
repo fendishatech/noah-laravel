@@ -3,6 +3,7 @@
 use App\Http\Controllers\admin\AuthController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\UserController;
+use App\Http\Controllers\client\ClientController;
 use Illuminate\Support\Facades\Route;
 
 // PUBLIC ROUTES
@@ -17,6 +18,7 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('public.auth.register');
 });
+Route::post('/register', [ClientController::class, "register"]);
 
 // ADMIN ROUTES
 Route::prefix('admin')->group(function () {

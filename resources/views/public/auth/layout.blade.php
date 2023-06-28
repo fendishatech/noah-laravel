@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Noah COOP | @yield('page_title')</title>
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
