@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="w-full px-6 sm:px-0 h-screen flex items-center justify-center bg-slate-100">
-        <form class="w-full md:w-1/3 rounded-lg bg-white" action="/login" method="POST">
+        <form class="w-full md:w-1/3 rounded-lg bg-white" action={{ url('/login') }} method="POST">
             @csrf
             <div class="flex font-bold flex-col items-center justify-center mt-6">
                 <img class="h-28 w-28 mb-3" src="/images/ebc-logo.png" />

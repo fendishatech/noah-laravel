@@ -25,6 +25,10 @@ Route::get('/confirmation', function () {
     return view('public.auth.confirm_register');
 });
 
+// PUBLIC :: MEMBERS ROUTES
+Route::get('/members', [MemberController::class, "home"]);
+
+
 // ADMIN ROUTES
 Route::prefix('admin')->group(function () {
     // LOGIN

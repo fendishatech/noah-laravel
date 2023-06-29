@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class MemberController extends Controller
 {
-    public function login()
+    public function home()
     {
-        return "You reached Login";
+        return view("public.members.index");
     }
 }
