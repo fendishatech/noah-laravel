@@ -1,10 +1,7 @@
 <?php
 
-use App\Http\Controllers\admin\AuthController;
-use App\Http\Controllers\admin\DashboardController;
-use App\Http\Controllers\admin\UserController;
-use App\Http\Controllers\client\ClientController;
-use App\Http\Controllers\client\MemberController;
+use App\Http\Controllers\ClientController;
+use App\Http\Controllers\MemberController;
 use Illuminate\Support\Facades\Route;
 
 // PUBLIC ROUTES
@@ -27,17 +24,3 @@ Route::get('/confirmation', function () {
 
 // PUBLIC :: MEMBERS ROUTES
 Route::get('/members', [MemberController::class, "home"]);
-
-
-// ADMIN ROUTES
-Route::prefix('admin')->group(function () {
-    // LOGIN
-    Route::get('/', function () {
-        return view('admin.auth.login');
-    })->name('login');
-    Route::post('/', [UserController::class, 'login']);
-    // LOGOUT
-    Route::get('/logout', [UserController::class, 'logout'])->middleware('auth');
-    // DASHBOARD
-    Route::get('/home', [DashboardController::class, 'index'])->middleware('auth');
-});
