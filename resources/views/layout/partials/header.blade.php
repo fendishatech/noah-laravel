@@ -1,5 +1,5 @@
-<header>
-    <div class="w-full h-[64px] bg-transparent">
+<header id="header" class="w-full fixed top-0 z-9999">
+    <div class="w-full h-[72px] bg-transparent">
         <div class='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
             {{-- Logo --}}
             <div class="flex items-center justify-center hiwua gap-4">

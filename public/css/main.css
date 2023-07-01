@@ -65,7 +65,7 @@
 /* Works on Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: rgb(37, 238, 80) rgb(22, 22, 21);
+  scrollbar-color: rgb(202 138 4) rgb(22, 22, 21);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -78,6 +78,11 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(37, 238, 80);
+  background-color: rgb(202 138 4);
   border-radius: 30px;
+}
+
+/* Hero section */
+.hero-section-bg {
+  background-image: url("../images/saving-1.jpg");
 }

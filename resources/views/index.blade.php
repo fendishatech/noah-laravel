@@ -5,5 +5,14 @@
 @endsection
 
 @section('content')
-    <h1 class="text-green-400 text-3xl font-bold underline">Home page content</h1>
+    <main>
+        {{-- hero --}}
+        @include('partials.hero')
+        {{-- About --}}
+        @include('partials.about')
+        {{-- Services --}}
+        @include('partials.services')
+        {{-- Contace --}}
+        @include('partials.contact')
+    </main>
 @endsection
