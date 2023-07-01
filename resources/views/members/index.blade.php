@@ -1,4 +1,4 @@
-@extends('public.layout.index')
+@extends('layout.index')
 
 @section('Page Title')
     Memebers Area

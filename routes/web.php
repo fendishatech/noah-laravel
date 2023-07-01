@@ -6,20 +6,20 @@ use Illuminate\Support\Facades\Route;
 
 // PUBLIC ROUTES
 Route::get('/', function () {
-    return view('public.index');
+    return view('index');
 });
 
 Route::get('/login', function () {
-    return view('public.auth.login');
+    return view('auth.login');
 });
 Route::post('/login', [MemberController::class, "login"]);
 
 Route::get('/register', function () {
-    return view('public.auth.register');
+    return view('auth.register');
 });
 Route::post('/register', [ClientController::class, "register"]);
 Route::get('/confirmation', function () {
-    return view('public.auth.confirm_register');
+    return view('auth.confirm_register');
 });
 
 // PUBLIC :: MEMBERS ROUTES

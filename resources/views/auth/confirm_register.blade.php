@@ -1,4 +1,4 @@
-@extends('public.auth.layout')
+@extends('auth.layout')
 
 @section('page_title')
     Confirmation
