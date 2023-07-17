@@ -6,15 +6,17 @@
     <div class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-4 mx-auto text-gray-900 rounded-lg">
         <div class="flex flex-col justify-center">
             <div>
-                <div class="text-red-900">
+                <div class="flex flex-col text-red-900">
                     <h2 class="text-4xl text-center lg:text-5xl font-bold mb-8 leading-tight">
                         አሁኑኑ ይደዉሉልን
                     </h2>
-                    <div class="flex items-center gap-4">
+                    <div class="flex gap-10">
                         <i class="w-12 h-12 fa fa-phone" aria-hidden="true"></i>
-                        <p class="text-2xl font-semibold">0911121314</p>
-                        <p class="text-2xl font-semibold">0911121314</p>
-                        <p class="text-2xl font-semibold">0911121314</p>
+                        <div class="flex justify-start flex-col gap-4">
+                            <p class="text-2xl font-semibold">0911121314</p>
+                            <p class="text-2xl font-semibold">0911121314</p>
+                            <p class="text-2xl font-semibold">0911121314</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,30 +40,30 @@
         <div>
             <span class="uppercase text-sm text-gray-600 font-bold"> ሙሉ ስም </span>
             <input
-                class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-400"
                 type="text" placeholder="ሙሉ ስም እስከ አባት" required />
         </div>
         <div class="mt-8">
             <span class="uppercase text-sm text-gray-600 font-bold"> እሜል </span>
             <input
-                class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-400"
                 type="email" placeholder="የኢሜል አድራሻ" required />
         </div>
         <div class="mt-8">
             <span class="uppercase text-sm text-gray-600 font-bold"> ስልክ ቁጥር </span>
             <input
-                class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-400"
                 type="phone" placeholder="ስልክ ቁጥር" required />
         </div>
         <div class="mt-8">
             <span class="uppercase text-sm text-gray-600 font-bold"> መልእክት </span>
             <textarea
-                class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-400"
                 placeholder="መልእክት ፣ አስተያየት" required></textarea>
         </div>
         <div class="mt-8">
             <button
-                class="uppercase text-2xl tracking-wide bg-yellow-600 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700"
+                class="uppercase text-2xl tracking-wide bg-yellow-600 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-yellow-700"
                 type="submit">
                 መልእክት ላክ
             </button>
