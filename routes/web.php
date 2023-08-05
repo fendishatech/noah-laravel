@@ -1,14 +1,21 @@
 <?php
 
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MemberController;
 use Illuminate\Support\Facades\Route;
 
-// PUBLIC ROUTES
-Route::get('/', function () {
-    return view('index');
+
+// HOME ROUTES
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index');
+    Route::get('/about', 'about');
+    Route::get('/services', 'services');
+    Route::get('/contact', 'contact');
 });
 
+
+// AUTH ROUTES
 Route::get('/login', function () {
     return view('auth.login');
 });

@@ -7,12 +7,12 @@
 @section('content')
     <main>
         {{-- hero --}}
-        @include('partials.hero')
+        @include('home.partials.hero')
         {{-- About --}}
-        @include('partials.about')
+        @include('home.partials.about')
         {{-- Services --}}
-        @include('partials.services')
+        @include('home.partials.services')
         {{-- Contace --}}
-        @include('partials.contact')
+        @include('home.partials.contact')
     </main>
 @endsection
