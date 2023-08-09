@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MemberController;
@@ -14,20 +15,22 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/contact', 'contact');
 });
 
-
 // AUTH ROUTES
-Route::get('/login', function () {
-    return view('auth.login');
-});
-Route::post('/login', [MemberController::class, "login"]);
+Route::prefix('auth')->group(function () {
+    Route::controller(AuthController::class)->group(function () {
+        Route::get('/register', 'getRegister');
+        Route::post('/register', 'postRegister');
 
-Route::get('/register', function () {
-    return view('auth.register');
+        Route::get('/login', 'getLogin');
+        Route::post('/login', 'postLogin');
+
+        Route::get('/logout', 'logout');
+
+        Route::get('/confirmation', 'getConfirmation');
+    });
 });
-Route::post('/register', [ClientController::class, "register"]);
-Route::get('/confirmation', function () {
-    return view('auth.confirm_register');
-});
+
+
 
 // PUBLIC :: MEMBERS ROUTES
 Route::get('/members', [MemberController::class, "home"]);
