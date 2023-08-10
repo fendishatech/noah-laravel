@@ -36,7 +36,8 @@
             </div>
         </div>
     </div>
-    <form>
+
+    <form class="px-10 py-6 bg-gray-50">
         <div>
             <span class="uppercase text-sm text-gray-600 font-bold"> ሙሉ ስም </span>
             <input
