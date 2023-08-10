@@ -24,14 +24,26 @@
                         <a href="/contact">ያግኙን</a>
                     </li>
                 </ul>
-                <div class="flex items-center hiwua gap-4">
-                    <button class="text-white text-xl bg-green-700 hover:bg-green-600 px-6 py-2 rounded">
-                        <a href="/auth/login"> ይግቡ</a>
-                    </button>
-                    <button class="text-white text-xl bg-green-700 hover:bg-green-600 px-6 py-2 rounded">
-                        <a href="/auth/register">ይመዝገቡ</a>
-                    </button>
-                </div>
+
+                @if (Session::has('member'))
+                    <div class="flex items-center hiwua gap-4">
+                        <button class="text-white text-xl bg-green-700 hover:bg-green-600 px-6 py-2 rounded">
+                            <a class="w-full h-full" href="/dashboard"> ዳሽቦርድ</a>
+                        </button>
+                        <button class="text-white text-xl bg-green-700 hover:bg-green-600 px-6 py-2 rounded">
+                            <a class="w-full h-full" href="/auth/logout">ዉጣ</a>
+                        </button>
+                    </div>
+                @else
+                    <div class="flex items-center hiwua gap-4">
+                        <button class="text-white text-xl bg-green-700 hover:bg-green-600 px-6 py-2 rounded">
+                            <a href="/auth/login"> ይግቡ</a>
+                        </button>
+                        <button class="text-white text-xl bg-green-700 hover:bg-green-600 px-6 py-2 rounded">
+                            <a href="/auth/register">ይመዝገቡ</a>
+                        </button>
+                    </div>
+                @endif
             </div>
 
             {{-- Hamburger menu --}}

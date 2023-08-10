@@ -19,9 +19,9 @@ class UserSeeder extends Seeder
             'father_name' => "doe",
             'last_name' => "smith",
             'email' => "john@gmail.com",
-            'password' => Hash::make("12345"),
+            'password' => Hash::make("123456"),
             'phone_no' => "0911121314",
-            'avatar' => "/images/image.jpg",
+            'avatar' => "/images/default.jpg",
             'user_role' => 'admin'
         ]);
 

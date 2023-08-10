@@ -30,7 +30,5 @@ Route::prefix('auth')->group(function () {
     });
 });
 
-
-
-// PUBLIC :: MEMBERS ROUTES
-Route::get('/members', [MemberController::class, "home"]);
+// Members Routes
+Route::get('/dashboard', [MemberController::class, "index"]);

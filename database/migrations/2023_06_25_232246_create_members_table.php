@@ -25,15 +25,13 @@ return new class extends Migration
             $table->integer('family_no');
             $table->integer('family_males');
             $table->integer('family_females');
-            $table->string('phone_no');
+            $table->string('phone_no')->unique();
             $table->string('email')->nullable();
             $table->string('will_list');
             $table->string('password');
             $table->string('refreshToken')->nullable();
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
-            $table->integer('memberTypeId')->index('memberTypeId');
-            $table->integer('memberEduId')->nullable()->index('memberEduId');
         });
     }
 

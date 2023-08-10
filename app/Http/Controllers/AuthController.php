@@ -6,6 +6,7 @@ use App\Models\Client;
 use App\Models\Member;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -29,8 +30,8 @@ class AuthController extends Controller
         if ($validatedData) {
             if ($member && Hash::check($req->password, $member->password)) {
                 // success
-                // Auth::login($user);
-                return redirect("/home");
+                $req->session()->put('member', $member);
+                return redirect("/");
             } else {
                 return redirect()->back()->withErrors([
                     'custom_error' => 'ያስገቡት ስልክ ቁትር ወይም የይለፍ ቃል የተሳሳት ነው!',
@@ -92,6 +93,7 @@ class AuthController extends Controller
 
     public function logout()
     {
-        // Handle the logout process
+        Session::forget('member');
+        return redirect('/');
     }
 }

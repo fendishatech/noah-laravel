@@ -9,6 +9,6 @@ class MemberController extends Controller
 {
     public function home()
     {
-        return view("public.members.index");
+        return view("members.index");
     }
 }
