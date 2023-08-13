@@ -2,7 +2,7 @@
     <p class="text-xl">All rights reserved | 2023 noahcoop</p>
     <div class="flex items-center">
         <!-- Facebook -->
-        <a href="/">
+        <a href="https://www.facebook.com/profile.php?id=100090650977088">
             <svg class="w-[40px] h-[40px]" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24" cy="24" r="20" fill="#3B5998" />
                 <path fill-rule="evenodd" clip-rule="evenodd"

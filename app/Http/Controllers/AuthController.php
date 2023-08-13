@@ -18,7 +18,6 @@ class AuthController extends Controller
     public function postLogin(Request $req)
     {
         $member = Member::where(['phone_no' => $req->phone_no])->first();
-
         $validatedData = $req->validate([
             'phone_no' => ['required'],
             'password' => ['required']

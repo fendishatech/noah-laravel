@@ -21,7 +21,7 @@ Route::prefix('auth')->group(function () {
         Route::get('/register', 'getRegister');
         Route::post('/register', 'postRegister');
 
-        Route::get('/login', 'getLogin');
+        Route::middleware('loggedIn')->name('login')->get('/login', 'getLogin');
         Route::post('/login', 'postLogin');
 
         Route::get('/logout', 'logout');
@@ -31,4 +31,4 @@ Route::prefix('auth')->group(function () {
 });
 
 // Members Routes
-Route::get('/dashboard', [MemberController::class, "index"]);
+Route::middleware('memberAuth')->get('/dashboard', [MemberController::class, "index"]);

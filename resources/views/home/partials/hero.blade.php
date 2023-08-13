@@ -38,12 +38,12 @@
         <div class="py-12">
             <div id="text-container">
                 <div id="text"
-                    class="mt-24 sm:mt-44 text-4xl hiwua sm:text-8xl font-thin text-yellow-600 text-center">
+                    class="mt-24 sm:mt-44 text-5xl hiwua sm:text-8xl font-thin text-yellow-600 text-center">
                 </div>
                 <div id="text-cursor"></div>
             </div>
 
-            <p class="mt-6 text-xl sm:text-4xl hiwua text-yellow-600 text-center">
+            <p class="mt-6 text-2xl sm:text-4xl hiwua text-yellow-600 text-center">
                 አስተዋዮች ከኖህ ጋር ይሻገራሉ!
             </p>
         </div>
