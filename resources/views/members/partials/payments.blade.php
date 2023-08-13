@@ -1,9 +1,12 @@
 <div class="w-full sm:w-1/2 p-2 bg-gray-100 rounded-lg">
     <div
         class="w-full h-full px-8 py-2 border-2 rounded-lg border-yellow-600 text-yellow-700 flex flex-col justify-start items-start">
-        <h1 class="mt-4 text-2xl font-semibold text-yellow-600">Upcoming Payments</h1>
-        <h1 class="mt-4 text-2xl font-semibold text-yellow-600">Promised Lots</h1>
-        <p class="text-bold text-2xl">23</p>
+        <h1 class="mt-4 text-2xl font-semibold text-yellow-600">ያሉ መጪ ክፍያዎች</h1>
+        <h1 class="mt-4 text-2xl font-semibold text-yellow-600">ወርሃዊ ቁጠባ</h1>
+        <div class="w-full flex justify-between">
+            <p class="text-bold text-2xl">500 ብር</p>
+            <p class="text-bold text-2xl">Due 22/13/2023</p>
+        </div>
     </div>
 </div>
 

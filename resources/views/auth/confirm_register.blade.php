@@ -20,9 +20,9 @@
                 ኦንላይን ምዝገባዎ ተሳክቷል ፣ የአባልነት ክፍያ 1000 ብር ክክፈሉ በዋላ ከዚህ በታች በቀረቡት አማራጮች ክፍያዎን
                 ያረጋግጡ ።
             </p>
-            <div class="px-12 pb-10 flex justify-center items-center">
-                <a href="/" class="text-4xl text-green-700">ቴሌግራም</a>
-                <a href="/" class="text-4xl text-green-700">ኢሜል</a>
+            <div class="px-12 pb-10 flex justify-center items-center gap-6">
+                <a href="/" class="px-4 py-2 text-4xl bg-green-700 rounded-md text-white">ቴሌግራም</a>
+                <a href="mailto:support@noahcoop.com" class="px-4 py-2 text-4xl bg-green-700 rounded-md text-white">ኢሜል</a>
             </div>
 
             <div class="px-12 pb-10 flex justify-center items-center">
